@@ -50,9 +50,9 @@ LOCAL_PRIVILEGED_MODULE := true
 LOCAL_MANIFEST_FILE := $(RELATIVE_SYSTEMUI_PATH)/AndroidManifest.xml
 LOCAL_FULL_LIBS_MANIFEST_FILES += $(LOCAL_PATH)/AndroidManifest.xml
 # Only include LineageManifest.xml if it exists
-#ifneq (,$(wildcard $(LOCAL_PATH)/$(RELATIVE_SYSTEMUI_PATH)/LineageManifest.xml))
+ifneq (,$(wildcard $(LOCAL_PATH)/$(RELATIVE_SYSTEMUI_PATH)/LineageManifest.xml))
 LOCAL_FULL_LIBS_MANIFEST_FILES += $(LOCAL_PATH)/$(RELATIVE_SYSTEMUI_PATH)/LineageManifest.xml
-#endif
+endif
 
 LOCAL_PROGUARD_FLAG_FILES := $(RELATIVE_SYSTEMUI_PATH)/proguard.flags
 LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res $(LOCAL_PATH)/$(RELATIVE_SYSTEMUI_PATH)/res-keyguard $(LOCAL_PATH)/$(RELATIVE_SYSTEMUI_PATH)/res
