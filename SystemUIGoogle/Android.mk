@@ -51,11 +51,10 @@ LOCAL_PRIVATE_PLATFORM_APIS := true
 LOCAL_CERTIFICATE := platform
 LOCAL_PRIVILEGED_MODULE := true
 
-LOCAL_MANIFEST_FILE := $(RELATIVE_SYSTEMUI_PATH)/AndroidManifest.xml
-LOCAL_FULL_LIBS_MANIFEST_FILES += $(LOCAL_PATH)/AndroidManifest.xml
+LOCAL_FULL_LIBS_MANIFEST_FILES += frameworks/base/packages/SystemUI/AndroidManifest.xml
 # Only include LineageManifest.xml if it exists
 ifneq (,$(wildcard $(LOCAL_PATH)/$(RELATIVE_SYSTEMUI_PATH)/LineageManifest.xml))
-LOCAL_FULL_LIBS_MANIFEST_FILES += $(LOCAL_PATH)/$(RELATIVE_SYSTEMUI_PATH)/LineageManifest.xml
+LOCAL_FULL_LIBS_MANIFEST_FILES += frameworks/base/packages/SystemUI/LineageManifest.xml
 endif
 
 LOCAL_PROGUARD_FLAG_FILES := $(RELATIVE_SYSTEMUI_PATH)/proguard.flags

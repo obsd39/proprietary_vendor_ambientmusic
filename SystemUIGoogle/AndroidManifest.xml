@@ -1,5 +1,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-        package="com.android.systemui">
+        xmlns:androidprv="http://schemas.android.com/apk/prv/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        package="com.android.systemui"
+        android:sharedUserId="android.uid.systemui"
+        coreApp="true">
 
     <!-- Ambient Indication -->
     <permission android:name="com.google.android.ambientindication.permission.AMBIENT_INDICATION" android:protectionLevel="privileged|signature"/>
