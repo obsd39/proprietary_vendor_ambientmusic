@@ -35,8 +35,12 @@ LOCAL_STATIC_ANDROID_LIBRARIES := \
 
 LOCAL_STATIC_JAVA_LIBRARIES := \
     SystemUI-tags \
-    SystemUI-proto \
+    SystemUI-proto
+
+ifneq ($(LINEAGE_BUILD),)
+LOCAL_STATIC_JAVA_LIBRARIES += \
     org.lineageos.platform.internal
+endif
 
 LOCAL_JAVA_LIBRARIES := telephony-common \
     android.car
