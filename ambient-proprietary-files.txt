@@ -1,0 +1,10 @@
+# AmbientMusic
+-priv-app/AmbientSensePrebuilt/AmbientSensePrebuilt.apk
+etc/ambient/matcher_tah.leveldb
+etc/firmware/dnd.descriptor
+etc/firmware/dnd.sound_model
+etc/firmware/music_detector.descriptor
+etc/firmware/music_detector.sound_model
+# com.google.intelligence.sense part of privapp-permissions-google.xml
+etc/permissions/ambientsense.xml|9c64102e4037881dcdca65446e285a3526367a40
+etc/sysconfig/pixel_experience_2017.xml:etc/sysconfig/ambientmusic.xml
