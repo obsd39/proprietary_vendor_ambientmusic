@@ -3,7 +3,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := AmbientSensePrebuilt
 LOCAL_MODULE_OWNER := ambientmusic
 LOCAL_SRC_FILES := proprietary/priv-app/AmbientSensePrebuilt/AmbientSensePrebuilt.apk
-LOCAL_CERTIFICATE := platform
+LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
 LOCAL_DEX_PREOPT := false

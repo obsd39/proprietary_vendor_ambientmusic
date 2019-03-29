@@ -1,5 +1,5 @@
 # AmbientMusic
--priv-app/AmbientSensePrebuilt/AmbientSensePrebuilt.apk
+-priv-app/AmbientSensePrebuilt/AmbientSensePrebuilt.apk;PRESIGNED
 etc/ambient/matcher_tah.leveldb
 etc/firmware/dnd.descriptor
 etc/firmware/dnd.sound_model
