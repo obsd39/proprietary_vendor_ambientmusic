@@ -1,0 +1,12 @@
+android_app_import {
+	name: "AmbientSensePrebuilt",
+	owner: "ambientmusic",
+	apk: "proprietary/product/priv-app/AmbientSensePrebuilt/AmbientSensePrebuilt.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
