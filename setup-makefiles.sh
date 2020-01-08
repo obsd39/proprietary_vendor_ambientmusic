@@ -33,6 +33,7 @@ fi
 . "$HELPER"
 
 rm -f $ANDROIDMK
+rm -f $ANDROIDBP
 rm -f $BOARDMK
 rm -f $PRODUCTMK
 
